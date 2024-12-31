@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Techicom</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/techicom_logo.jpeg" alt="Techicom Logo" class="logo_img">
+                <a href="#">Techicom</a>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Company Dropdown -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Company</a>
+                        <div class="dropdown-content">
+                            <a href="index.html#who-we-are">Who We Are</a>
+                            <a href="clients.html">Clients</a>
+                        </div>
+                    </li>
+
+                    <!-- Industry Dropdown -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Industry</a>
+                        <div class="dropdown-content">
+                            <a href="index.html#industry">Manufacturing</a>
+                            <a href="index.html#industry">Healthcare</a>
+                            <a href="index.html#industry">Food & Beverage</a>
+                            <a href="index.html#industry">Automotive</a>
+                            <a href="index.html#industry">Finance & Banking</a>
+                            <a href="index.html#industry">Retail</a>
+                            <a href="index.html#industry">Education</a>
+                            <a href="index.html#industry">Real Estate</a>
+                            <a href="index.html#industry">Logistics</a>
+                            <a href="index.html#industry">Insurance</a>
+                            <a href="index.html#industry">Technology</a>
+                        </div>
+                    </li>
+
+                    <!-- Technology Dropdown -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Technology</a>
+                        <div class="dropdown-content">
+                            <a href="technology.html#sd">Software Development</a>
+                            <a href="technology.html#mad">Mobile App Development</a>
+                            <a href="technology.html#ecd">eCommerce Development</a>
+                            <a href="technology.html#wd">Website Development</a>
+                            <a href="technology.html#alc">Automation Lifecycle</a>
+                        </div>
+                    </li>
+
+                    <!-- Branding Dropdown -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Branding</a>
+                        <div class="dropdown-content">
+                            <a href="branding.html#brand-building">Brand Building</a>
+                            <a href="branding.html#digital-marketing">Digital Marketing & Lead Gen</a>
+                            <a href="branding.html#whatsapp-chatbot">WhatsApp ChatBot</a>
+                            <a href="branding.html#reputation-management">Online Reputation Management</a>
+                        </div>
+                    </li>
+
+                    <!-- Login Section -->
+                    <li>
+                        <a href="#login" class="login-button">
+                            Login
+                        </a>
+                    </li>
+
+                    <!--Whatsapp API Integration-->
+                    <li>
+                        <a href="https://api.whatsapp.com/send/?phone=918128188661&text=Website&type=phone_number" class="whatsapp-link">
+                          <div class="whatsapp-content">
+                            <img src="images/whatsapp_logo.png" alt="WhatsApp Logo" class="whatsapp-logo">
+                            <div class="whatsapp-text">
+                              <span class="whatsapp-label">WhatsApp</span>
+                              <span class="whatsapp-number">+91 8128188661</span>
+                            </div>
+                          </div>
+                        </a>
+                    </li>                                                                         
+            </nav>
+        </div>
+    </header>
+    <div id="quote">
+        <h2>Techicom Service Interest Form</h2>
+        <form action="http://localhost/submit_form.php" method="POST">
+            <label for="name">* Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="gender">* Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" id="male" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" id="female" name="gender" value="Female"> Female</label>
+                <label><input type="radio" id="prefer_not_to_say" name="gender" value="Prefer Not to Say"> Prefer Not to Say</label>
+            </div><br>
+
+            <label for="business_email">* Business Email:</label>
+            <input type="email" id="business_email" name="business_email" required><br><br>
+        
+            <label for="business_mobile">* Business Mobile Number:</label>
+            <input type="tel" id="business_mobile" name="business_mobile" required><br><br>
+        
+            <label for="business_name">* Business Name:</label>
+            <input type="text" id="business_name" name="business_name" required><br><br>
+        
+            <label for="business_size">* Business Size:</label>
+            <select id="business_size" name="business_size" required>
+                <option value="Only You">Only You</option>
+                <option value="1-10 Employees">1-10 Employees</option>
+                <option value="11-50 Employees">11-50 Employees</option>
+                <option value="50+ Employees">50+ Employees</option>
+            </select><br><br>
+        
+            <label for="service_interests">* Service(s) Interested In:</label><br>
+            <input type="checkbox" name="service_interests[]" value="Domain Management"> Domain Management<br>
+            <input type="checkbox" name="service_interests[]" value="Hosting & Server Management"> Hosting & Server Management<br>
+            <input type="checkbox" name="service_interests[]" value="Website Development"> Website Development<br>
+            <input type="checkbox" name="service_interests[]" value="Software Development"> Software Development<br>
+            <input type="checkbox" name="service_interests[]" value="Mobile App Development"> Mobile App Development<br>
+            <input type="checkbox" name="service_interests[]" value="ChatBot"> ChatBot<br>
+            <input type="checkbox" name="service_interests[]" value="IVRAMC"> IVRAMC<br><br>
+        
+            <label for="start_time">* When are you Expecting to Start?</label><br>
+            <div class="radio-group">
+                <label><input type="radio" name="start_time" value="Immediately" required> Immediately</label>
+                <label><input type="radio" name="start_time" value="Within a Week"> Within a Week</label>
+                <label><input type="radio" name="start_time" value="Within a Month"> Within a Month</label>
+                <label><input type="radio" name="start_time" value="Not Sure"> Not Sure</label>
+            </div><br>
+
+            <label for="details">Specific Details (optional):</label><br>
+            <textarea id="details" name="details" rows="5" cols="50"></textarea><br><br>
+            
+            <div class="consent">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">* I allow Techicom to contact via email or call to discuss my requirement further.</label>
+            </div><br>
+
+            <input type="submit" value="Get a Quote">
+        </form>            
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/techicom/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/techicomcom/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/company/techicom"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:sales@techicom.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/918128188661"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="https://calendly.com/techicom/discoverycall">Book a call</a></li>
+                    <li><a href="getquote.html#quote">Get a quote</a></li>
+                    <li><a href="index.html#who-we-are">About us</a></li>
+                    <li><a href="javascript:void(0)">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>&copy; Copyright 2025; Designed by <span class="designer">Niranjankumar Rathod</span>.</p>
+        </div>
+    </footer>
+</body>
+</html>
